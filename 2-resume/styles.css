@@ -1,0 +1,99 @@
+body {
+  font-family: 'Arial';
+  margin: 0;
+  padding: 0;
+}
+  
+.resume {
+  max-width: 870px;
+  margin: 0 auto;
+  /* padding: 0px; */
+  padding-top: 5px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #FFDEB6;
+}
+  
+header {
+  text-align: center;
+}
+  
+header h1 {
+  margin-bottom: 10px;
+}
+  
+.contact-info {
+  font-size: 16px;
+}
+  
+.contact-info a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 5px;
+}
+  
+.interests,
+.education,
+.experience,
+.projects,
+.skills,
+.achievements {
+  margin-top: -5px;
+}
+
+.interests hr,
+.education hr,
+.experience hr,
+.projects hr,
+.skills hr,
+.achievements hr {
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+  
+.interests h2,
+.education h2,
+.experience h2,
+.projects h2,
+.skills h2,
+.achievements h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+  
+.interests p,
+.education p,
+.experience p,
+.projects p,
+.skills p,
+.achievements p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.experience-entry a{
+  font-size: 16px;
+}
+
+.experience-entry ul li{
+  font-size: 16px;
+}
+
+.project-entry a{
+  font-size: 16px;
+}
+
+.project-entry ul li{
+  font-size: 16px;
+}
+
+.achievements ul li{
+  font-size: 16px;
+}
+.contact-info a img {
+  padding: 0;
+  width: 30px;
+  height: auto;
+}
