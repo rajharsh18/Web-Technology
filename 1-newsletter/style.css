@@ -1,0 +1,45 @@
+.Newsletter{
+  background-color: rgb(255, 255, 255);
+  width: 100%; 
+  height: auto; 
+  aspect-ratio: 595/841.64;
+  margin: 0;
+  padding: 0;
+}
+
+.rect1{
+  background-color: #7D8DC7;;
+  width: 88%;
+  height: auto; 
+  aspect-ratio: 524/23;
+  margin: 0;
+  padding: 0;
+}
+.rect1 p {
+  font-size: 15px;
+  color: #ffffff;
+  padding-left: 3%;
+  padding-top: .5%;
+}
+
+.rect2{
+  background-color: #0C1670;
+  width: 88%;
+  height: auto; 
+  aspect-ratio: 524/135;
+  margin: 0;
+  padding: 0;
+}
+.rect2 img {
+  height: 60%;
+  width: auto;
+  display: block;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 5%;
+
+}
+.rect2 p {
+  font-size: 16px;
+  color: #ffffff;
+}
