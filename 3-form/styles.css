@@ -52,7 +52,7 @@ body {
 }
 
 .question{
-    font-size: 11px;
+    font-size: 12px;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 20px;
@@ -61,26 +61,99 @@ body {
 
 
 input[type="text"] {
+    margin-top: 3px;
     width: 492px;
     height: 27px;
     border-radius: 5px;
     border-color: #B5B5B5;
 }
 
-
-input[name="q10"] {
-    width: 388px;
-    height: 68px;
-    border-radius: 5px;
-    border-top: #B5B5B5;
-    border-left: #B5B5B5;
-    border-right: #B5B5B5;
-}
-
 input[name="q11"],
 input[name="q13"] {
+    margin-top: 3px;
     width: 492px;
     height: 115px;
     border-radius: 5px;
     border-color: #B5B5B5;
 }
+
+#imageContainer {
+    margin-top: 3px;
+    width: 388px;
+    height: 68px;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+    background-color: white;
+}
+
+#preview {
+    margin-top: 3px;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+
+.reject-button {
+    background-color: transparent;
+    border: 2px solid #F42A2A;
+    color: #F42A2A;
+    width: 50px;
+    height: 20px;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.accept-button {
+    background-color: transparent;
+    border: 2px solid #59C149;
+    color: #59C149;
+    width: 50px;
+    height: 20px;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+#q12-image{
+    width: 113px;
+    height: auto;
+    margin-top: 3px;
+}
+
+.file-upload-container {
+    display: flex;
+    align-items: center;
+}
+
+.file-name {
+    margin-left: 11px;
+    font-style: italic;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    background-color: white;
+    border: 2px solid #B5B5B5;
+    color: black;
+    width: 100px;
+    height: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+

@@ -12,9 +12,7 @@
             <div class="header">
                 <h2>Alumni Membership Form</h2>
             </div>
-
-
-            <form action="#" method="post">
+            <form action="index.html" method="post">
                 <div class="question">
                     <label for="q1">Name</label>
                     <br>
@@ -75,30 +73,100 @@
                 <div class="question">
                     <label for="q10">Signature</label>
                     <br>
-                    <input type="text" id="q10" name="q10">
-                </div>
+                    <input type="file" id="imageInput" accept="image/*" onchange="previewImage(event)" style="display: none;">
+                    <div id="imageContainer" onclick="document.getElementById('imageInput').click();">
+                        <img id="preview" src="#" alt="Image Preview">
+                        <p id="uploadText"></p>
+                    </div>
+                    <br>
+                    <button type="button" class="reject-button" onclick="rejectImage()">Reject</button>
+                    <button type="button" class="accept-button" onclick="acceptImage()">Accept</button>
+                </div>              
                 <div class="question">
                     <label for="q11">Kindly provide details of other alumni known to you that will love to join in the association</label>
                     <br>
                     <input type="text" id="q11" name="q11">
                 </div>
+                
                 <div class="question">
                     <label for="q12">Upload a photo of you</label>
                     <br>
-                    <input type="file" id="q12" name="fileUpload" accept=".pdf, .doc, .docx">
+                    <input type="file" id="q12" accept="image/*" style="display: none;">
+                    <div class="file-upload-container">
+                        <div onclick="document.getElementById('q12').click();">
+                            <img id="q12-image" src="upload.png" alt="Upload Here">
+                        </div>
+                        <div id="file-name" class="file-name"></div>
+                    </div>
                 </div>
-
+                
                 <div class="question">
                     <label for="q13">Additional Comments</label>
                     <br>
                     <input type="text" id="q13" name="q13">
                 </div>
-                <button type="submit">Submit</button>
-
-            
+                <div class="submit-btn">
+                    <button type="submit" class="submit-button">Submit</button>
+                    <!-- <button type="submit" class="submit-button" onclick="redirectToPage('https:\/\/www.google.com')">Submit</button> -->
+                </div>        
             </form>
-        </div>
-        
+        </div> 
     </div>
+
+    <script>
+        function previewImage(event) {
+            var input = event.target;
+            var preview = document.getElementById('preview');
+            var uploadText = document.getElementById('uploadText');
+            var file = input.files[0];
+            var reader = new FileReader();
+            reader.onload = function() {
+                preview.style.display = 'block';
+                uploadText.style.display = 'none';
+                preview.src = reader.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function acceptImage() {
+            var imageInput = document.getElementById('imageInput');
+            var preview = document.getElementById('preview');
+            if (imageInput.files.length === 0) {
+                alert("Please upload an image first.");
+                return;
+            }
+            alert("Image accepted!");
+        }
+
+        function rejectImage() {
+            var imageInput = document.getElementById('imageInput');
+            var preview = document.getElementById('preview');
+            var uploadText = document.getElementById('uploadText');
+            if (imageInput.files.length === 0) {
+                alert("Please upload an image first.");
+                return;
+            }
+            alert("Image rejected.");
+            imageInput.value = "";
+            preview.style.display = 'none';
+            uploadText.style.display = 'block';
+            preview.src = "#";
+        }
+
+
+        var fileInput = document.getElementById('q12');
+        fileInput.addEventListener('change', displayFileName);
+        function displayFileName() {
+            var fileNameDisplay = document.getElementById('file-name');
+            if (fileInput.files.length > 0) {
+                fileNameDisplay.textContent = "Uploaded File: " + fileInput.files[0].name;
+            } else {
+                fileNameDisplay.textContent = "";
+            }
+        }
+        // function redirectToPage(link) {
+        //     window.location.href = link;
+        // }
+    </script>
 </body>
 </html>
