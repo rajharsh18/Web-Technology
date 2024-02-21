@@ -77,6 +77,14 @@ input[name="q13"] {
     border-color: #B5B5B5;
 }
 
+input[name="q3"] {
+    margin-top: 3px;
+    width: 500px;
+    height: 33px;
+    border-radius: 5px;
+    border-color: #B5B5B5;
+}
+
 #imageContainer {
     margin-top: 3px;
     width: 388px;

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 <body>
     <div class="form-1">
@@ -26,7 +28,7 @@
                 <div class="question">
                     <label for="q3">Phone Number</label>
                     <br>
-                    <input type="text" id="q3" name="q3">
+                    <input id="q3" type="number" name="q3" />
                 </div>
                 <div class="question">
                     <label for="q4">Gender</label>
@@ -167,6 +169,14 @@
         // function redirectToPage(link) {
         //     window.location.href = link;
         // }
+
+        // Phone Number
+        const phoneInputField = document.querySelector("#q3");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+          initialCountry: "in" // Set India as the default country
+        });
     </script>
 </body>
 </html>
