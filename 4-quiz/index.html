@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page1" class="page">
+        <h2>Section 1 : Introduction</h2>
+        <div id="introduction" class="page-1">
+            <fieldset>
+                <legend>Name</legend>
+                <input type="text" name="name">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" name="email">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Course</legend>
+                <input type="text" name="course">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>College</legend>
+                <input type="text" name="college">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>University</legend>
+                <input type="text" name="university">
+            </fieldset>
+            <br>
+            <fieldset>
+                <!-- TODO -->
+                <legend>Year of Passing out:</legend>
+                <input type="radio" id="2024" name="year-pass" value="2024">
+                <label for="2024">2024</label><br>
+                <input type="radio" id="2025" name="year-pass" value="2025">
+                <label for="2025">2025</label><br>
+                <input type="radio" id="2026" name="year-pass" value="2026">
+                <label for="2026">2026</label><br>
+                <input type="radio" id="2027" name="year-pass" value="2027">
+                <label for="2027">2027</label><br>
+                <input type="radio" id="2028" name="year-pass" value="2028">
+                <label for="2028">2028</label><br>
+            </fieldset>
+        </div>
+        <br>
+        <button onclick="nextPage(1)">Next</button>
+    </div>
+
+    <div id="page2" class="page">
+        <h2>Section 2 : Multiple Choice Question</h2>
+        <div id="page-2" class="page-2">
+            <fieldset>
+                <legend>Question 1</legend>
+                <legend>Question</legend>
+                <input type="radio" id="option-1" name="answer1" value="option-1">
+                <label for="option-1">Option 1</label><br>
+                <input type="radio" id="option-2" name="answer1" value="option-2">
+                <label for="option-2">Option 2</label><br>
+                <input type="radio" id="option-3" name="answer1" value="option-3">
+                <label for="option-3">Option 3</label><br>
+                <input type="radio" id="option-4" name="answer1" value="option-4">
+                <label for="option-4">Option 4</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 2</legend>
+                <legend>Question</legend>
+                <input type="radio" id="option-1" name="answer2" value="option-1">
+                <label for="option-1">Option 1</label><br>
+                <input type="radio" id="option-2" name="answer2" value="option-2">
+                <label for="option-2">Option 2</label><br>
+                <input type="radio" id="option-3" name="answer2" value="option-3">
+                <label for="option-3">Option 3</label><br>
+                <input type="radio" id="option-4" name="answer2" value="option-4">
+                <label for="option-4">Option 4</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 3</legend>
+                <legend>Question</legend>
+                <input type="radio" id="option-1" name="answer3" value="option-1">
+                <label for="option-1">Option 1</label><br>
+                <input type="radio" id="option-2" name="answer3" value="option-2">
+                <label for="option-2">Option 2</label><br>
+                <input type="radio" id="option-3" name="answer3" value="option-3">
+                <label for="option-3">Option 3</label><br>
+                <input type="radio" id="option-4" name="answer3" value="option-4">
+                <label for="option-4">Option 4</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 4</legend>
+                <legend>Question</legend>
+                <input type="radio" id="option-1" name="answer4" value="option-1">
+                <label for="option-1">Option 1</label><br>
+                <input type="radio" id="option-2" name="answer4" value="option-2">
+                <label for="option-2">Option 2</label><br>
+                <input type="radio" id="option-3" name="answer4" value="option-3">
+                <label for="option-3">Option 3</label><br>
+                <input type="radio" id="option-4" name="answer4" value="option-4">
+                <label for="option-4">Option 4</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 5</legend>
+                <legend>Question</legend>
+                <input type="radio" id="option-1" name="answer5" value="option-1">
+                <label for="option-1">Option 1</label><br>
+                <input type="radio" id="option-2" name="answer5" value="option-2">
+                <label for="option-2">Option 2</label><br>
+                <input type="radio" id="option-3" name="answer5" value="option-3">
+                <label for="option-3">Option 3</label><br>
+                <input type="radio" id="option-4" name="answer5" value="option-4">
+                <label for="option-4">Option 4</label><br>
+            </fieldset>
+        </div>
+        <br>
+        <button onclick="prevPage(2)">Previous</button>
+        <button onclick="nextPage(2)">Next</button>
+    </div>
+
+    <div id="page3" class="page">
+        <h2>Section 3 : Short Answer Questions</h2>
+        <div id="page-3" class="page-3">
+            <fieldset>
+                <legend>Question 1</legend>
+                <legend>Question</legend>
+                <input type="text" name="SA-answer-1">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 2</legend>
+                <legend>Question</legend>
+                <input type="text"name="SA-answer-2">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 3</legend>
+                <legend>Question</legend>
+                <input type="text" name="SA-answer-3">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 4</legend>
+                <legend>Question</legend>
+                <input type="text" name="SA-answer-4">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 5</legend>
+                <legend>Question</legend>
+                <input type="text" name="SA-answer-5">
+            </fieldset>
+        </div>
+        <br>
+        <button onclick="prevPage(3)">Previous</button>
+        <button onclick="nextPage(3)">Next</button>
+    </div>
+
+    <div id="page4" class="page">
+        <h2>Section 4 : Long Answer Questions</h2>
+        <div id="page-4" class="page-4">
+            <fieldset>
+                <legend>Question 1</legend>
+                <legend>Question</legend>
+                <textarea rows="4" cols="50" name="LA-answer-1"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 2</legend>
+                <legend>Question</legend>
+                <textarea rows="4" cols="50" name="LA-answer-2"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 3</legend>
+                <legend>Question</legend>
+                <textarea rows="4" cols="50" name="LA-answer-3"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 4</legend>
+                <legend>Question</legend>
+                <textarea rows="4" cols="50" name="LA-answer-4"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 5</legend>
+                <legend>Question</legend>
+                <textarea rows="4" cols="50" name="LA-answer-5"></textarea>
+            </fieldset>
+        </div>
+        <br>
+        <button onclick="prevPage(4)">Previous</button>
+        <button onclick="nextPage(4)">Next</button>
+    </div>
+
+    <div id="page5" class="page">
+        <h2>Section 5 : Multiple Correct Option Question</h2>
+        <div id="page-5" class="page-5">
+            <fieldset>
+                <legend>Which of the following are fruits?</legend>
+                <input type="checkbox" id="apple" name="MCOQ-answer-1" value="apple">
+                <label for="apple">Apple</label><br>
+                <input type="checkbox" id="banana" name="MCOQ-answer-1" value="banana">
+                <label for="banana">Banana</label><br>
+                <input type="checkbox" id="carrot" name="MCOQ-answer-1" value="carrot">
+                <label for="carrot">Carrot</label><br>
+                <input type="checkbox" id="orange" name="MCOQ-answer-1" value="orange">
+                <label for="orange">Orange</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Question 2</legend>
+                <input type="checkbox" id="apple" name="MCOQ-answer-2" value="apple">
+                <label for="apple">Apple</label><br>
+                <input type="checkbox" id="banana" name="MCOQ-answer-2" value="banana">
+                <label for="banana">Banana</label><br>
+                <input type="checkbox" id="carrot" name="MCOQ-answer-2" value="carrot">
+                <label for="carrot">Carrot</label><br>
+                <input type="checkbox" id="orange" name="MCOQ-answer-2" value="orange">
+                <label for="orange">Orange</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Question 3</legend>
+                <input type="checkbox" id="apple" name="MCOQ-answer-3" value="apple">
+                <label for="apple">Apple</label><br>
+                <input type="checkbox" id="banana" name="MCOQ-answer-3" value="banana">
+                <label for="banana">Banana</label><br>
+                <input type="checkbox" id="carrot" name="MCOQ-answer-3" value="carrot">
+                <label for="carrot">Carrot</label><br>
+                <input type="checkbox" id="orange" name="MCOQ-answer-3" value="orange">
+                <label for="orange">Orange</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Question 4</legend>
+                <input type="checkbox" id="apple" name="MCOQ-answer-4" value="apple">
+                <label for="apple">Apple</label><br>
+                <input type="checkbox" id="banana" name="MCOQ-answer-4" value="banana">
+                <label for="banana">Banana</label><br>
+                <input type="checkbox" id="carrot" name="MCOQ-answer-4" value="carrot">
+                <label for="carrot">Carrot</label><br>
+                <input type="checkbox" id="orange" name="MCOQ-answer-4" value="orange">
+                <label for="orange">Orange</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Question 5</legend>
+                <input type="checkbox" id="apple" name="MCOQ-answer-5" value="apple">
+                <label for="apple">Apple</label><br>
+                <input type="checkbox" id="banana" name="MCOQ-answer-5" value="banana">
+                <label for="banana">Banana</label><br>
+                <input type="checkbox" id="carrot" name="MCOQ-answer-5" value="carrot">
+                <label for="carrot">Carrot</label><br>
+                <input type="checkbox" id="orange" name="MCOQ-answer-5" value="orange">
+                <label for="orange">Orange</label><br>
+            </fieldset>
+        </div>
+        <br>
+        <button onclick="prevPage(5)">Previous</button>
+        <button onclick="submitQuiz()">Submit</button>
+    </div>
+
+    <div id="result" class="page">
+        <h2>Result</h2>
+        <h3>Your Responce has been submitted.</h3>
+        <div id="result-child">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
