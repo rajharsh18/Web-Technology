@@ -1,0 +1,191 @@
+/* Next Button */
+.next {
+  --color: 142, 151, 255;
+  border-radius: .5em;
+  transition: .3s;
+  background-color: rgba(var(--color), .2);
+  color: rgb(var(--color));
+  fill: rgb(var(--color));
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: x-large;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border: 2px solid rgb(var(--color));
+  box-shadow: 0 0 10px rgba(var(--color), .4);
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: .5em 1em;
+}
+
+.next:hover {
+  box-shadow: 0 0 0 5px rgba(var(--color), .5);
+}
+
+.next span {
+  transform: scale(.8);
+  transition: .3s;
+}
+
+.next:hover span {
+  transform: scale(1);
+}
+
+.next svg {
+  font-size: 0;
+  transform: scale(0.5) translateX(0%) rotate(-180deg);
+  transition: .3s;
+}
+
+.next:hover svg {
+  font-size: 20px;
+  transform: scale(1) translateX(20%) rotate(0deg);
+}
+
+.next:active {
+  transition: 0s;
+  box-shadow: 0 0 0 5px rgb(var(--color));
+}
+
+
+/* Previous Button */
+.prev {
+    --color: 180,255, 100;
+}
+
+.prev:hover {
+    box-shadow: 0 0 0 5px rgba(var(--color), .5);
+}
+
+.prev span {
+    transition: .3s;
+}
+
+.prev:hover span {
+    transform: scale(1.2);
+}
+
+.prev svg {
+    font-size: 0;
+    transform: scaleX(-1);
+    transition: .3s;
+}
+
+.prev:hover svg {
+    transform: scaleX(-1) translateX(1150%);
+    font-size: 20px;
+}
+
+.prev:active {
+    transition: 0s;
+    box-shadow: 0 0 0 5px rgb(var(--color));
+}
+
+/* START Button*/
+
+.start-btn {
+    --color: #ffcd39;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    border: none;
+    background-color: transparent;
+}
+  
+.start-btn div {
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: var(--color);
+    border-radius: 2rem;
+    color: black;
+    padding: 1rem;
+}
+  
+.start-btn::before {
+    content: '';
+    z-index: -1;
+    background-color: var(--color);
+    border: 2px solid black;
+    border-radius: 2rem;
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(10deg);
+    transition: .5s;
+    opacity: 0.2;
+}
+  
+.start-btn:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+  
+.start-btn:hover::before {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+  
+.start-btn svg {
+    transform: translateX(-200%);
+    transition: .5s;
+    width: 0;
+    opacity: 0;
+}
+  
+.start-btn:hover svg {
+    width: 25px;
+    transform: translateX(0%);
+    opacity: 1;
+}
+  
+.start-btn:active {
+    filter: brightness(1.4);
+}
+
+/* SUBMIT Button*/
+.submitBtn {
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to left,rgb(230, 35, 0),rgb(255, 174, 0));
+    letter-spacing: 0.7px;
+}
+  
+.submitBtn:hover .arrow {
+    animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.submitBtn:hover {
+    width: 135px;
+    height: 45px;
+}
+  
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+  
+.submitBtn:active {
+    transform: scale(0.97);
+}

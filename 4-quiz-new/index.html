@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="element_style.css">
+</head>
+<body>
+    <div id="page0" class="page">
+        <div id="page0" class="page-0">
+            <button class="start-btn" onclick="nextPage(0)">
+                <div>START THE TECH QUIZ</div>
+                <svg fill="none" viewBox="0 0 24 24" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="black" d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"></path>
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="black" d="M4 12.0601H14.17"></path>
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="black" d="M12 4C16.42 4 20 7 20 12C20 17 16.42 20 12 20"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="page1" class="page">
+        <h2>Introduction</h2>
+        <div id="introduction" class="page-1">
+            <fieldset>
+                <legend>Name</legend>
+                <input type="text" name="name" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" name="email" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Course</legend>
+                <input type="text" name="course" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>College</legend>
+                <input type="text" name="college" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>University</legend>
+                <input type="text" name="university" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Year of Passing out:</legend>
+                <input type="radio" id="2024" name="year-pass" value="2024" required>
+                <label for="2024">2024</label><br>
+                <input type="radio" id="2025" name="year-pass" value="2025" required>
+                <label for="2025">2025</label><br>
+                <input type="radio" id="2026" name="year-pass" value="2026" required>
+                <label for="2026">2026</label><br>
+                <input type="radio" id="2027" name="year-pass" value="2027" required>
+                <label for="2027">2027</label><br>
+                <input type="radio" id="2028" name="year-pass" value="2028" required>
+                <label for="2028">2028</label><br>
+            </fieldset>
+        </div>
+        <br>
+        <div class="button-container" style="justify-content: right;">
+            <button class="next" onclick="nextPage(1)">
+            <span>Next</span>
+                <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="page2" class="page">
+        <h2>Section 1 : Web Development</h2>
+        <div id="page-2" class="page-2">
+            <fieldset>
+                <legend>Question 1</legend>
+                <legend>What does CSS stand for in web development?</legend>
+                <input type="radio" id="Computer Style Sheets" name="s1-answer1" value="Computer Style Sheets" required>
+                <label for="Computer Style Sheets">Computer Style Sheets</label><br>
+                <input type="radio" id="Creative Style Sheets" name="s1-answer1" value="Creative Style Sheets" required>
+                <label for="Creative Style Sheets">Creative Style Sheets</label><br>
+                <input type="radio" id="Cascading Style Sheets" name="s1-answer1" value="Cascading Style Sheets" required>
+                <label for="Cascading Style Sheets">Cascading Style Sheets</label><br>
+                <input type="radio" id="Complex Style Sheets" name="s1-answer1" value="Complex Style Sheets" required>
+                <label for="Complex Style Sheets">Complex Style Sheets</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 2</legend>
+                <legend>Which of the following is NOT a programming language commonly used for front-end web development?</legend>
+                <input type="radio" id="HTML" name="s1-answer2" value="HTML" required>
+                <label for="HTML">HTML</label><br>
+                <input type="radio" id="JavaScript" name="s1-answer2" value="JavaScript" required>
+                <label for="JavaScript">JavaScript</label><br>
+                <input type="radio" id="Python" name="s1-answer2" value="Python" required>
+                <label for="Python">Python</label><br>
+                <input type="radio" id="CSS" name="s1-answer2" value="CSS" required>
+                <label for="CSS">CSS</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 3</legend>
+                <legend>What does AJAX stand for in web development?</legend>
+                <input type="radio" id="Asynchronous JavaScript and XML" name="s1-answer3" value="Asynchronous JavaScript and XML" required>
+                <label for="Asynchronous JavaScript and XML">Asynchronous JavaScript and XML</label><br>
+                <input type="radio" id="Asynchronous JavaScript and XHTML" name="s1-answer3" value="Asynchronous JavaScript and XHTML" required>
+                <label for="Asynchronous JavaScript and XHTML">Asynchronous JavaScript and XHTML</label><br>
+                <input type="radio" id="Asynchronous JavaScript and JSON" name="s1-answer3" value="Asynchronous JavaScript and JSON" required>
+                <label for="Asynchronous JavaScript and JSON">Asynchronous JavaScript and JSON</label><br>
+                <input type="radio" id="Asynchronous JavaScript and HTML" name="s1-answer3" value="Asynchronous JavaScript and HTML" required>
+                <label for="Asynchronous JavaScript and HTML">Asynchronous JavaScript and HTML</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 4</legend>
+                <legend>Which of the following tags is used to define an image in HTML?</legend>
+                <input type="radio" id="img" name="s1-answer4" value="img" required>
+                <label for="img">&lt;img&gt;</label><br>
+                <input type="radio" id="image" name="s1-answer4" value="image" required>
+                <label for="image">&lt;image&gt;</label><br>
+                <input type="radio" id="pic" name="s1-answer4" value="pic" required>
+                <label for="pic">&lt;pic&gt;</label><br>
+                <input type="radio" id="src" name="s1-answer4" value="src" required>
+                <label for="src">&lt;src&gt;</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 5</legend>
+                <legend>What is the purpose of the "viewport" meta tag in HTML?</legend>
+                <input type="radio" id="To define the size of the browser window" name="s1-answer5" value="To define the size of the browser window" required>
+                <label for="To define the size of the browser window">To define the size of the browser window</label><br>
+                <input type="radio" id="To specify the author of the webpage" name="s1-answer5" value="To specify the author of the webpage" required>
+                <label for="To specify the author of the webpage">To specify the author of the webpage</label><br>
+                <input type="radio" id="To set the zoom level of the webpage" name="s1-answer5" value="To set the zoom level of the webpage" required>
+                <label for="To set the zoom level of the webpage">To set the zoom level of the webpage</label><br>
+                <input type="radio" id="To control the layout on mobile browsers" name="s1-answer5" value="To control the layout on mobile browsers" required>
+                <label for="To control the layout on mobile browsers">To control the layout on mobile browsers</label><br>
+            </fieldset>
+        </div>
+        <br>
+        <div class="button-container">
+            <button class="next prev" onclick="prevPage(2)">
+            <span>&nbsp;Previous&nbsp;</span>
+            <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+            </svg>
+            </button>
+
+            <button class="next" onclick="nextPage(2)">
+            <span>Next</span>
+                <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+        <h2>Section 2 : Database Management Systems (DBMS)</h2>
+        <div id="page-3" class="page-3">
+            <fieldset>
+                <legend>Question 1</legend>
+                <legend>What does SQL stand for in the context of databases?</legend>
+                <input type="radio" id="Structured Query Language" name="s2-answer1" value="Structured Query Language" required>
+                <label for="Structured Query Language">Structured Query Language</label><br>
+                <input type="radio" id="Sequential Query Language" name="s2-answer1" value="Sequential Query Language" required>
+                <label for="Sequential Query Language">Sequential Query Language</label><br>
+                <input type="radio" id="Semantic Query Language" name="s2-answer1" value="Semantic Query Language" required>
+                <label for="Semantic Query Language">Semantic Query Language</label><br>
+                <input type="radio" id="Simple Query Language" name="s2-answer1" value="Simple Query Language" required>
+                <label for="Simple Query Language">Simple Query Language</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 2</legend>
+                <legend>Which of the following is not a type of database model?</legend>
+                <input type="radio" id="Relational" name="s2-answer2" value="Relational" required>
+                <label for="Relational">Relational</label><br>
+                <input type="radio" id="NoSQL" name="s2-answer2" value="NoSQL" required>
+                <label for="NoSQL">NoSQL</label><br>
+                <input type="radio" id="XML" name="s2-answer2" value="XML" required>
+                <label for="XML">XML</label><br>
+                <input type="radio" id="HTML" name="s2-answer2" value="HTML" required>
+                <label for="HTML">HTML</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 3</legend>
+                <legend>In a relational database, what does ACID stand for?</legend>
+                <input type="radio" id="Atomicity, Consistency, Isolation, Durability" name="s2-answer3" value="Atomicity, Consistency, Isolation, Durability" required>
+                <label for="Atomicity, Consistency, Isolation, Durability">Atomicity, Consistency, Isolation, Durability</label><br>
+                <input type="radio" id="Association, Consistency, Isolation, Durability" name="s2-answer3" value="Association, Consistency, Isolation, Durability" required>
+                <label for="Association, Consistency, Isolation, Durability">Association, Consistency, Isolation, Durability</label><br>
+                <input type="radio" id="Atomicity, Consistency, Isolation, Downtime" name="s2-answer3" value="Atomicity, Consistency, Isolation, Downtime" required>
+                <label for="Atomicity, Consistency, Isolation, Downtime">Atomicity, Consistency, Isolation, Downtime</label><br>
+                <input type="radio" id="Association, Consistency, Isolation, Downtime" name="s2-answer3" value="Association, Consistency, Isolation, Downtime" required>
+                <label for="Association, Consistency, Isolation, Downtime">Association, Consistency, Isolation, Downtime</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 4</legend>
+                <legend>What is the purpose of an index in a database?</legend>
+                <input type="radio" id="To enforce data integrity" name="s2-answer4" value="To enforce data integrity" required>
+                <label for="To enforce data integrity">To enforce data integrity</label><br>
+                <input type="radio" id="To speed up data retrieval" name="s2-answer4" value="To speed up data retrieval" required>
+                <label for="To speed up data retrieval">To speed up data retrieval</label><br>
+                <input type="radio" id="To store large binary data" name="s2-answer4" value="To store large binary data" required>
+                <label for="To store large binary data">To store large binary data</label><br>
+                <input type="radio" id="To define relationships between tables" name="s2-answer4" value="To define relationships between tables" required>
+                <label for="To define relationships between tables">To define relationships between tables  </label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 5</legend>
+                <legend>Which of the following is not a valid data type in SQL?</legend>
+                <input type="radio" id="VARCHAR" name="s2-answer5" value="VARCHAR" required>
+                <label for="VARCHAR">VARCHAR</label><br>
+                <input type="radio" id="BOOLEAN" name="s2-answer5" value="BOOLEAN" required>
+                <label for="BOOLEAN">BOOLEAN</label><br>
+                <input type="radio" id="ARRAY" name="s2-answer5" value="ARRAY" required>
+                <label for="ARRAY">ARRAY</label><br>
+                <input type="radio" id="INTEGER" name="s2-answer5" value="INTEGER" required>
+                <label for="INTEGER">INTEGER</label><br>
+            </fieldset>
+        </div>
+        <br>
+        <div class="button-container">
+            <button class="next prev" onclick="prevPage(3)">
+            <span>&nbsp;Previous&nbsp;</span>
+            <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+            </svg>
+            </button>
+
+            <button class="next" onclick="nextPage(3)">
+            <span>Next</span>
+                <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="page4" class="page">
+        <h2>Section 3 : Networking</h2>
+        <div id="page-4" class="page-4">
+            <fieldset>
+                <legend>Question 1</legend>
+                <legend>What does TCP/IP stand for in networking?</legend>
+                <input type="radio" id="Transmission Control Protocol/Internet Protocol" name="s3-answer1" value="Transmission Control Protocol/Internet Protocol" required>
+                <label for="Transmission Control Protocol/Internet Protocol">Transmission Control Protocol/Internet Protocol</label><br>
+                <input type="radio" id="Total Control Protocol/Internet Protocol" name="s3-answer1" value="Total Control Protocol/Internet Protocol" required>
+                <label for="Total Control Protocol/Internet Protocol">Total Control Protocol/Internet Protocol</label><br>
+                <input type="radio" id="Transfer Control Protocol/Internet Protocol" name="s3-answer1" value="Transfer Control Protocol/Internet Protocol" required>
+                <label for="Transfer Control Protocol/Internet Protocol">Transfer Control Protocol/Internet Protocol</label><br>
+                <input type="radio" id="Telecommunication Control Protocol/Internet Protocol" name="s3-answer1" value="Telecommunication Control Protocol/Internet Protocol" required>
+                <label for="Telecommunication Control Protocol/Internet Protocol">Telecommunication Control Protocol/Internet Protocol</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 2</legend>
+                <legend>Which OSI layer is responsible for routing and forwarding packets?</legend>
+                <input type="radio" id="Data Link Layer" name="s3-answer2" value="Data Link Layer" required>
+                <label for="Data Link Layer">Data Link Layer</label><br>
+                <input type="radio" id="Network Layer" name="s3-answer2" value="Network Layer" required>
+                <label for="Network Layer">Network Layer</label><br>
+                <input type="radio" id="Transport Layer" name="s3-answer2" value="Transport Layer" required>
+                <label for="Transport Layer">Transport Layer</label><br>
+                <input type="radio" id="Physical Layer" name="s3-answer2" value="Physical Layer" required>
+                <label for="Physical Layer">Physical Layer</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 3</legend>
+                <legend>What does DHCP stand for in networking?</legend>
+                <input type="radio" id="Dynamic Host Control Protocol" name="s3-answer3" value="Dynamic Host Control Protocol" required>
+                <label for="Dynamic Host Control Protocol">Dynamic Host Control Protocol</label><br>
+                <input type="radio" id="Dynamic Host Configuration Protocol" name="s3-answer3" value="Dynamic Host Configuration Protocol" required>
+                <label for="Dynamic Host Configuration Protocol">Dynamic Host Configuration Protocol</label><br>
+                <input type="radio" id="Domain Host Configuration Protocol" name="s3-answer3" value="Domain Host Configuration Protocol" required>
+                <label for="Domain Host Configuration Protocol">Domain Host Configuration Protocol</label><br>
+                <input type="radio" id="Domain Host Control Protocol" name="s3-answer3" value="Domain Host Control Protocol" required>
+                <label for="Domain Host Control Protocol">Domain Host Control Protocol</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 4</legend>
+                <legend>What is the purpose of NAT in networking?</legend>
+                <input type="radio" id="To translate between public and private IP addresses" name="s3-answer4" value="To translate between public and private IP addresses" required>
+                <label for="To translate between public and private IP addresses">To translate between public and private IP addresses</label><br>
+                <input type="radio" id="To encrypt network traffic" name="s3-answer4" value="To encrypt network traffic" required>
+                <label for="To encrypt network traffic">To encrypt network traffic</label><br>
+                <input type="radio" id="To prevent unauthorized access to a network" name="s3-answer4" value="To prevent unauthorized access to a network" required>
+                <label for="To prevent unauthorized access to a network">To prevent unauthorized access to a network</label><br>
+                <input type="radio" id="To manage network bandwidth" name="s3-answer4" value="To manage network bandwidth" required>
+                <label for="To manage network bandwidth">To manage network bandwidth</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 5</legend>
+                <legend>What protocol is used to send email over the Internet?</legend>
+                <input type="radio" id="FTP" name="s3-answer5" value="FTP" required>
+                <label for="FTP">FTP</label><br>
+                <input type="radio" id="SMTP" name="s3-answer5" value="SMTP" readonly>
+                <label for="SMTP">SMTP</label><br>
+                <input type="radio" id="HTTP" name="s3-answer5" value="HTTP" required>
+                <label for="HTTP">HTTP</label><br>
+                <input type="radio" id="SSH" name="s3-answer5" value="SSH" required>
+                <label for="SSH">SSH</label><br>
+            </fieldset>
+        </div>
+        <br>
+        <div class="button-container">
+            <button class="next prev" onclick="prevPage(4)">
+            <span>&nbsp;Previous&nbsp;</span>
+            <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+            </svg>
+            </button>
+
+            <button class="next" onclick="nextPage(4)">
+            <span>Next</span>
+                <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="page5" class="page">
+        <h2>Section 4 : Data Structures and Algorithms (DSA)</h2>
+        <div id="page-5" class="page-5">
+            <fieldset>
+                <legend>Question 1</legend>
+                <legend>Which sorting algorithm has the best time complexity in the average case?</legend>
+                <input type="radio" id="Selection Sort" name="s4-answer1" value="Selection Sort" required>
+                <label for="Selection Sort">Selection Sort</label><br>
+                <input type="radio" id="Heap Sort" name="s4-answer1" value="Heap Sort" required>
+                <label for="Heap Sort">Heap Sort</label><br>
+                <input type="radio" id="Merge Sort" name="s4-answer1" value="Merge Sort" required>
+                <label for="Merge Sort">Merge Sort</label><br>
+                <input type="radio" id="Radix Sort" name="s4-answer1" value="Radix Sort" required>
+                <label for="Radix Sort">Radix Sort</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 2</legend>
+                <legend>What data structure is typically used to implement a LIFO (Last In, First Out) behavior?</legend>
+                <input type="radio" id="Tree" name="s4-answer2" value="Tree" required>
+                <label for="Tree">Tree</label><br>
+                <input type="radio" id="Heap" name="s4-answer2" value="Heap" required>
+                <label for="Heap">Heap</label><br>
+                <input type="radio" id="Stack" name="s4-answer2" value="Stack" required>
+                <label for="Stack">Stack</label><br>
+                <input type="radio" id="Linked List" name="s4-answer2" value="Linked List" required>
+                <label for="Linked List">Linked List</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 3</legend>
+                <legend>What is the name of the sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order?</legend>
+                <input type="radio" id="Bucket Sort" name="s4-answer3" value="Bucket Sort" required>
+                <label for="Bucket Sort">Bucket Sort</label><br>
+                <input type="radio" id="Bubble Sort" name="s4-answer3" value="Bubble Sort" required>
+                <label for="Bubble Sort">Bubble Sort</label><br>
+                <input type="radio" id="Insertion Sort" name="s4-answer3" value="Insertion Sort" required>
+                <label for="Insertion Sort">Insertion Sort</label><br>
+                <input type="radio" id="Quick Sort" name="s4-answer3" value="Quick Sort" required>
+                <label for="Quick Sort">Quick Sort</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 4</legend>
+                <legend>What is the time complexity of binary search in the worst-case scenario?</legend>
+                <input type="radio" id="O(1)" name="s4-answer4" value="O(1)" required>
+                <label for="O(1)">O(1)</label><br>
+                <input type="radio" id="O(log n)" name="s4-answer4" value="O(log n)" required>
+                <label for="O(log n)">O(log n)</label><br>
+                <input type="radio" id="O(n)" name="s4-answer4" value="O(n)" required>
+                <label for="O(n)">O(n)</label><br>
+                <input type="radio" id="O(n^2)" name="s4-answer4" value="O(n^2)" required>
+                <label for="O(n^2)">O(n^2)</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Question 5</legend>
+                <legend>Which data structure organizes items in a manner that allows for efficient insertion, deletion, and search operations?</legend>
+                <input type="radio" id="Array" name="s4-answer5" value="Array" required>
+                <label for="Array">Array</label><br>
+                <input type="radio" id="Queue" name="s4-answer5" value="Queue" required>
+                <label for="Queue">Queue</label><br>
+                <input type="radio" id="Binary Tree" name="s4-answer5" value="Binary Tree" required>
+                <label for="Binary Tree">Binary Tree</label><br>
+                <input type="radio" id="Hash Table" name="s4-answer5" value="Hash Table" required>
+                <label for="Hash Table">Hash Table</label><br>
+            </fieldset>
+        </div>
+        <br>
+        <div class="button-container">
+            <button class="next prev" onclick="prevPage(5)">
+            <span>&nbsp;Previous&nbsp;</span>
+            <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+            </svg>
+            </button>
+            <button class="submitBtn" onclick="submitQuiz()">
+                Submit
+                <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+              </button>
+        </div>
+    </div>
+
+    <div id="result" class="page result">
+        <h2>Result</h2>
+        <h3>Your Responce has been submitted.</h3>
+        <div id="result-child">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
