@@ -67,3 +67,22 @@ input[type="email"]:focus {
     justify-content: center;
     font-size: 25px;
 }
+
+.timer-container{
+    display: flex;
+    justify-content: center;
+}
+
+.timer {
+    width:5%;
+    text-align: right;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: pulse 1s infinite alternate;
+    z-index: 9999;
+}

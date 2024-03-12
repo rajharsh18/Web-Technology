@@ -96,12 +96,33 @@ function nextPage(page) {
     }
 }
 
+function start(page) {
+    if (page === 1) {
+        const emailInput = document.querySelector('input[type="email"]');
+        const email = emailInput.value.trim();
+        if (!validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+    }
+
+    // Check if all required inputs are filled
+    if (validateInputs()) {
+        document.getElementById(`page${page}`).classList.remove('active');
+        document.getElementById(`page${page + 1}`).classList.add('active');
+        document.documentElement.scrollTop = 0;
+        document.getElementById("timer").removeAttribute("hidden");
+        startTimer();
+    } else {
+        alert("Please answer all questions before proceeding.");
+    }
+}
+
 function prevPage(page) {
     document.getElementById(`page${page}`).classList.remove('active');
     document.getElementById(`page${page - 1}`).classList.add('active');
     document.documentElement.scrollTop = 0;
 }
-
 
 function clearInputs() {
     const textInputs = document.querySelectorAll('input[type="text"], input[type="email"], textarea');
@@ -169,7 +190,6 @@ function checkAnswers(userAnswers, answerKey) {
     return result;
 }
 
-
 function submitQuiz() {
 
     if (validateInputs()) {
@@ -200,8 +220,14 @@ function submitQuiz() {
         console.log(score);
     
         clearInputs();
-    
+        
+        document.getElementById(`page0`).classList.remove('active');
+        document.getElementById(`page1`).classList.remove('active');
+        document.getElementById(`page2`).classList.remove('active');
+        document.getElementById(`page3`).classList.remove('active');
+        document.getElementById(`page4`).classList.remove('active');
         document.getElementById(`page5`).classList.remove('active');
+        document.getElementById("timer").hidden = true;
         document.getElementById(`result`).classList.add('active');
     
         var paragraph = document.createElement('p');
@@ -218,6 +244,34 @@ function submitQuiz() {
         alert("Please answer all questions before proceeding.");
     }
 
+}
+
+function removeRequired() {
+    const requiredInputs = document.querySelectorAll('input[required], textarea[required]');
+    requiredInputs.forEach(input => {
+        input.removeAttribute('required');
+    });
+}
+
+var totalSeconds = 300;
+var timerInterval;
+
+function startTimer() {
+    var minutes, seconds;
+    timerInterval = setInterval(function() {
+        minutes = Math.floor(totalSeconds / 60);
+        seconds = totalSeconds % 60;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        document.getElementById("timer").textContent = minutes + ":" + seconds;
+        totalSeconds--;
+        if (totalSeconds < 0) {
+            clearInterval(timerInterval);
+            alert("Time's up!");
+            removeRequired();
+            submitQuiz();
+        }
+    }, 1000);
 }
 
 window.onload = function() {
