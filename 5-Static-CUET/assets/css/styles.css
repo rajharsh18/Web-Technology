@@ -862,7 +862,7 @@ Contact Style
   background-color: #fff;
 }
 
-.contact-content .phone {
+.contact-content .time {
   margin-right: 15px;
 }
 
@@ -1191,7 +1191,7 @@ Contact Page Style
   min-width: 360px;
 }
 
-.contact-page .phone {
+.contact-page .time {
   margin-bottom: 30px;
 }
 
@@ -1364,7 +1364,7 @@ body {
     margin-right: 10px;
     font-size: 13px;
   }
-  .contact-content .phone {
+  .contact-content .time {
     margin-right: 0px;
     margin-bottom: 20px;
   }
@@ -1413,7 +1413,6 @@ body {
   bottom: 0;
   width: 100%;
   background-color: #333;
-  color: #fff;
   padding: 20px 0;
   text-align: center;
   margin-top: 30px;
@@ -1421,6 +1420,7 @@ body {
 
 .footer p {
   margin: 0;
+  color: #b2b1b1;
 }
 
 .logo-style{
