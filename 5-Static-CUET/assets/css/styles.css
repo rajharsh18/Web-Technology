@@ -305,7 +305,7 @@ Header Style
   color: #fff;
 }
 
-.header-area .main-nav .nav li:hover a {
+.header-area .main-nav .nav li a:hover {
   color: #25d1f3;
 }
 
@@ -1431,4 +1431,35 @@ body {
 .new-icon{
   width: 25px;
   height: auto;
+}
+
+/* Dropdown menu */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #bc00ca;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 100px;
+}
+
+.dropdown-content a:hover {
+  background-color: #73007c;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

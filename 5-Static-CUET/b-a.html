@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="icon" type="image/x-icon" href="assets/new/1-logo.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link data-chunk="pages-article-detail" rel="stylesheet" href="assets/css/styles_cuet.css">
-    <link rel="preload" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
     
   </head>
 
@@ -26,13 +24,18 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <a href="index.html" class="logo">
-                          <img src="assets/new/CIC.png" alt="Logo" class="logo logo-style">
+                          <img src="assets/new/CIC.png" alt="Logo" class="logo logo-style" >
                         </a>
                         <ul class="nav">
-                          <li><a href="index.html">Home</a></li>
+                          <li><a href="index.html" >Home</a></li>
                           <li><a href="cuet.html">CUET</a></li>
-                          <li><a href="b-tech.html">B.Tech.(IT&MI)</a></li>
-                          <li><a href="b-a.html" class="active">B.A.(Honors)</a></li>
+                          <li class="dropdown">
+                            <a href="#" class="dropbtn active">Courses  ≡</a>
+                            <div class="dropdown-content">
+                                <a href="b-tech.html">B.Tech.(IT&MI)</a>
+                                <a href="b-a.html">B.A.(Honors)</a>
+                            </div>
+                        </li>
                           <li><a href="contact.html">Contact</a></li>
                           <li></li>
                         </ul>   
