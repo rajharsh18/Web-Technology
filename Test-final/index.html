@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <div class="header">
+            <h1>CALCULATOR</h1>
+        </div>
+
+        <div class="calculator">
+            <div class="cal-screen" id="display"></div>
+            <div class="cal-btn" onclick="addToDisplay('7')">7</div>
+            <div class="cal-btn" onclick="addToDisplay('8')">8</div>
+            <div class="cal-btn" onclick="addToDisplay('9')">9</div>
+            <div class="cal-btn operator-btn" onclick="addToDisplay('+')">+</div>
+            <div class="cal-btn" onclick="addToDisplay('4')">4</div>
+            <div class="cal-btn" onclick="addToDisplay('5')">5</div>
+            <div class="cal-btn" onclick="addToDisplay('6')">6</div>
+            <div class="cal-btn operator-btn" onclick="addToDisplay('-')">-</div>
+            <div class="cal-btn" onclick="addToDisplay('1')">1</div>
+            <div class="cal-btn" onclick="addToDisplay('2')">2</div>
+            <div class="cal-btn" onclick="addToDisplay('3')">3</div>
+            <div class="cal-btn operator-btn" onclick="addToDisplay('*')">*</div>
+            <div class="cal-btn clear-btn" onclick="clearDisplay()">AC</div>
+            <div class="cal-btn" onclick="addToDisplay('0')">0</div>
+            <div class="cal-btn clear-btn" onclick="clearOne()">C</div>
+            <div class="cal-btn operator-btn" onclick="addToDisplay('/')">/</div>
+            <div class="cal-btn" onclick="addToDisplay('.')">.</div>
+            <div class="cal-btn equal-btn" onclick="calculate()">=</div>
+        </div>
+
+        <div class="footer">
+            <p>Designed By Harsh Raj</p>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
